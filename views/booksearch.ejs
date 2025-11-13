@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search for a Book</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Search for a Book</h1>
+
+    <!-- Form sends the search keyword to /books/searchresult -->
+    <form action="/books/searchresult" method="GET">
+      <input type="text" name="keyword" placeholder="Enter book name">
+      <input type="submit" value="Search">
+    </form>
+  </body>
+</html>

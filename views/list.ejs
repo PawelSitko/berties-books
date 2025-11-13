@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bertie’s Book Shop</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Welcome to Bertie’s Book Shop!</h1>
+    <h2>Available Books</h2>
+
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Price (£)</th>
+      </tr>
+
+      <% for (let i = 0; i < availableBooks.length; i++) { %>
+        <tr>
+          <td><%= availableBooks[i].id %></td>
+          <td><%= availableBooks[i].name %></td>
+          <td><%= availableBooks[i].price %></td>
+        </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
