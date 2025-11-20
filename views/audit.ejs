@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Audit Log</title>
+</head>
+<body>
+
+    <h1>Audit History</h1>
+
+    <table border="1" cellpadding="6" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Status</th>
+            <th>Timestamp</th>
+        </tr>
+
+        <% for (let i = 0; i < logs.length; i++) { %>
+            <tr>
+                <td><%= logs[i].id %></td>
+                <td><%= logs[i].username %></td>
+                <td><%= logs[i].status %></td>
+                <td><%= logs[i].timestamp %></td>
+            </tr>
+        <% } %>
+    </table>
+
+</body>
+</html>
