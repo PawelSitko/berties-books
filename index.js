@@ -52,11 +52,19 @@ app.locals.shopData = { shopName: "Bertie's Books" };
 const mainRoutes = require("./routes/main");
 app.use("/", mainRoutes);
 
+const weatherRoutes = require("./routes/weather");
+app.use("/weather", weatherRoutes);
+
+
 const userRoutes = require("./routes/users");
 app.use("/users", userRoutes);
 
 const booksRoutes = require("./routes/books");
 app.use("/books", booksRoutes);
+
+const apiRoutes = require("./routes/api");
+app.use("/api", apiRoutes);
+
 
 
 app.listen(port, () => {
